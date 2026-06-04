@@ -1,4 +1,4 @@
-baseURL = "https://YOUR-DOMAIN.com/"
+baseURL = "https://scnb.github.io/myblog/"
 title = "My Blog"
 copyright = "© 2026 MyBlog"
 theme = "PaperMod"
