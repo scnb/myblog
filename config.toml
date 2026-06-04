@@ -1,0 +1,92 @@
+baseURL = "https://YOUR-DOMAIN.com/"
+title = "My Blog"
+copyright = "© 2026 MyBlog"
+theme = "PaperMod"
+
+enableInlineShortcodes = true
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+pygmentsUseClasses = true
+
+minify.disableXML = true
+
+pagination.pagerSize = 5
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[[menu.main]]
+  name = "About"
+  url = "about"
+  weight = 1
+
+[[menu.main]]
+  name = "Archive"
+  url = "archives"
+  weight = 2
+
+[[menu.main]]
+  name = "Search"
+  url = "search"
+  weight = 3
+
+[[menu.main]]
+  name = "Tags"
+  url = "tags"
+  weight = 4
+
+[params]
+  env = "production"
+  description = "个人博客 - 分享技术与生活"
+  author = "博主"
+
+  defaultTheme = "auto"
+  ShowShareButtons = true
+  ShowReadingTime = true
+  displayFullLangName = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  ShowAllPagesInArchive = true
+  ShowPageNums = true
+  ShowToc = true
+
+  [params.homeInfoParams]
+    Title = "Hi there 👋"
+    Content = """
+欢迎来到我的博客！
+这里分享技术、生活与思考。
+- 🚀 技术探索
+- 📝 学习笔记
+- 🌱 个人成长
+"""
+
+  [[params.socialIcons]]
+    name = "github"
+    title = "GitHub"
+    url = "https://github.com/"
+
+  [[params.socialIcons]]
+    name = "x"
+    title = "X/Twitter"
+    url = "https://x.com/"
+
+  [params.assets]
+    disableHLJS = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+
+[services]
+  [services.instagram]
+    disableInlineCSS = true
+  [services.x]
+    disableInlineCSS = true
